@@ -62,10 +62,28 @@ Add-Content -Path .\logs\cycle.out -Value $hdr
 # --- state file -------------------------------------------------
 $statePath = ".\data\runtime_guard.json"
 if (-not (Test-Path $statePath)) { "{}" | Out-File -Encoding utf8 $statePath }
-try { $state = Get-Content $statePath -Raw | ConvertFrom-Json } catch { $state = @{} }
-if (-not $state.fails)          { $state | Add-Member -NotePropertyName fails -NotePropertyValue @() }
-if (-not $state.gas_day)        { $state | Add-Member -NotePropertyName gas_day -NotePropertyValue "" }
-if (-not $state.gas_usd_today)  { $state | Add-Member -NotePropertyName gas_usd_today -NotePropertyValue 0.0 }
+
+try {
+  $state = Get-Content $statePath -Raw | ConvertFrom-Json
+} catch {
+  $state = [pscustomobject]@{}
+}
+
+function Ensure-Prop($obj, $name, $default) {
+  if ($null -eq $obj.PSObject.Properties[$name]) {
+    $obj | Add-Member -NotePropertyName $name -NotePropertyValue $default
+  }
+}
+
+# ensure required note properties exist (without duplicating)
+Ensure-Prop $state 'fails'           @()
+Ensure-Prop $state 'gas_day'         ""
+Ensure-Prop $state 'gas_usd_today'   0.0
+Ensure-Prop $state 'cooldown_until'  $null
+
+# normalize types
+if ($state.fails -eq $null) { $state.fails = @() }
+elseif ($state.fails -isnot [System.Collections.IList]) { $state.fails = @($state.fails) }
 
 # --- pre-checks: kill / cooldown / daily gas budget ------------
 if ($KILL -eq 1) {
