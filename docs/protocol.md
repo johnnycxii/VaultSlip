@@ -327,20 +327,3 @@ Unattended cycles, daily report, alert-on-anomaly only.
 **Resume at:** Step 36
 <!-- PROGRESS_METRICS_END -->
 
-python .\scripts\update_progress.py
-git add .\docs\protocol.md .\progress_status.json
-git commit -m "Progress: Step 46 CI green"
-git push
-python .\scripts\update_progress.py
-git add .\docs\protocol.md .\progress_status.json
-git commit -m "Progress: Step 46 CI green"
-git push
-python .\scripts\update_progress.py
-git add .\docs\protocol.md .\progress_status.json
-git commit -m "Progress: Step 46 CI green"
-git push
-python .\scripts\update_progress.py
-git add .\docs\protocol.md .\progress_status.json
-git commit -m "Progress: Step 46 CI green"
-git push
-
