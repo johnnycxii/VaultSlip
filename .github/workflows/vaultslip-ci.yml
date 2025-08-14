@@ -31,7 +31,7 @@ jobs:
           POLYGONSCAN_API_KEY=dummy
           CELOSCAN_API_KEY=dummy
           ENV
-          echo "Wrote C:\Users\Johnny\Projects\VaultSlip/.env"
+          echo "Wrote $(pwd)/.env"
 
       - name: Install deps (best effort)
         shell: bash
@@ -72,4 +72,5 @@ jobs:
 
       - name: CI summary
         if: always()
-        run: echo "CI baseline succeeded (soft-fail deps/import/tests)" >> "\"
+        run: |
+          echo "CI baseline succeeded (soft-fail deps/import/tests)" >> $GITHUB_STEP_SUMMARY
