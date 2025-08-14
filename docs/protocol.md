@@ -317,13 +317,30 @@ Unattended cycles, daily report, alert-on-anomaly only.
 | 21-27 | Wallet & execution scaffold |  Complete | Keyring, nonce/gas, scheduler, sweeper drafts, router w/ sweeps |
 | 28-30 | Tests & backfill |  Complete | Backfill script and tests; pytest green |
 | 31-35 | Production readiness |  Complete | Live-send toggle, estimator v1, ABI-aware sims, token sweep config, resilience |
-| 36-50 | Expansion & scaling |  In Progress | 36 Allow/Block policy ; 37 Metrics ; 38 Deployment scheduling ; 39 Multi-chain growth ; 40 Executor parallelism ; 41 Advanced sims ; 42 Prioritization ; 43 Mempool hygiene ; 44 Key hygiene ; 45 Ops guardrails  |
+| 36-50 | Expansion & scaling |  Not Started | Not started |
 <!-- PROGRESS_TABLE_END -->
 
 
 <!-- PROGRESS_METRICS_START -->
-**Completion (by protocol steps):** **90.0%**
-**Functional readiness:** **90.0%**
-**Resume at:** Step 46
+**Completion (by protocol steps):** **70.0%**
+**Functional readiness:** **70.0%**
+**Resume at:** Step 36
 <!-- PROGRESS_METRICS_END -->
+
+python .\scripts\update_progress.py
+git add .\docs\protocol.md .\progress_status.json
+git commit -m "Progress: Step 46 CI green"
+git push
+python .\scripts\update_progress.py
+git add .\docs\protocol.md .\progress_status.json
+git commit -m "Progress: Step 46 CI green"
+git push
+python .\scripts\update_progress.py
+git add .\docs\protocol.md .\progress_status.json
+git commit -m "Progress: Step 46 CI green"
+git push
+python .\scripts\update_progress.py
+git add .\docs\protocol.md .\progress_status.json
+git commit -m "Progress: Step 46 CI green"
+git push
 

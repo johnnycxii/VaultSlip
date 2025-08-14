@@ -1,297 +1,214 @@
 {
   "steps": {
-    "38": {
-      "name": "Deployment scheduling",
-      "status": "Complete",
-      "notes": [
-        "Cycle + rotate/backup active"
-      ],
-      "updated_at": "2025-08-13T20:35:08.750019"
-    },
-    "39": {
-      "name": "Multi-chain growth",
-      "status": "Complete",
-      "notes": [
-        "Discovery queued 13 (ETH 12, CELO 1)"
-      ],
-      "updated_at": "2025-08-13T20:35:08.750019"
-    },
-    "40": {
-      "name": "Executor parallelism",
-      "status": "Complete",
-      "notes": [
-        "Concurrent batch dry-run OK"
-      ],
-      "updated_at": "2025-08-13T20:35:08.750019"
-    },
-    "41": {
-      "name": "Advanced sims",
-      "status": "Complete",
-      "notes": [
-        "Param-inference via eth_call; router gating safe"
-      ],
-      "updated_at": "2025-08-13T20:35:08.750019"
-    },
-    "42": {
-      "name": "Prioritization",
-      "status": "Complete",
-      "notes": [
-        "Ranking in place; current rewards=0 for treasury"
-      ],
-      "updated_at": "2025-08-13T20:35:08.750019"
-    },
-    "43": {
-      "name": "Mempool hygiene",
-      "status": "Complete",
-      "notes": [
-        "Caps computed and bounded by env; replacement ladder verified",
-        "Retry limit present; private RPC optional"
-      ],
-      "updated_at": "2025-08-13T20:59:05.182635"
-    },
-    "44": {
-      "name": "Key hygiene",
-      "status": "Complete",
-      "notes": [
-        "Weekly rotation ping task registered",
-        "Rotation cadence + buffer checks in review file"
-      ],
-      "updated_at": "2025-08-13T21:11:09.963083"
-    },
     "1": {
       "name": "Folder & file setup",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282132"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "2": {
       "name": "Folder & file setup",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "3": {
       "name": "Folder & file setup",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "4": {
       "name": "Folder & file setup",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "5": {
       "name": "Folder & file setup",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "6": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "7": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "8": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "9": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "10": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "11": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "12": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "13": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "14": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "15": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "16": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "17": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "18": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "19": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "20": {
       "name": "Core build sequence",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "21": {
       "name": "Wallet & execution scaffold",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "22": {
       "name": "Wallet & execution scaffold",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "23": {
       "name": "Wallet & execution scaffold",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "24": {
       "name": "Wallet & execution scaffold",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "25": {
       "name": "Wallet & execution scaffold",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "26": {
       "name": "Wallet & execution scaffold",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "27": {
       "name": "Wallet & execution scaffold",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "28": {
       "name": "Tests & backfill",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "29": {
       "name": "Tests & backfill",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "30": {
       "name": "Tests & backfill",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "31": {
       "name": "Production readiness",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "32": {
       "name": "Production readiness",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "33": {
       "name": "Production readiness",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "34": {
       "name": "Production readiness",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
+      "updated_at": "2025-08-14T14:11:10.843879"
     },
     "35": {
       "name": "Production readiness",
       "status": "Complete",
       "notes": [],
-      "updated_at": "2025-08-13T21:11:27.282909"
-    },
-    "36": {
-      "name": "Allow/Block policy",
-      "status": "Complete",
-      "notes": [
-        "Default deny-by-default; history thresholds tightened"
-      ],
-      "updated_at": "2025-08-13T21:18:06.314592"
-    },
-    "37": {
-      "name": "Metrics",
-      "status": "Complete",
-      "notes": [
-        "export_metrics.py added; charts/logs available"
-      ],
-      "updated_at": "2025-08-13T21:18:06.314592"
-    },
-    "45": {
-      "name": "Ops guardrails",
-      "status": "Complete",
-      "notes": [
-        "Kill-switch, cooldown after error bursts, daily gas budget",
-        "Implemented in scripts/cycle_dryrun.ps1; state at data/runtime_guard.json"
-      ],
-      "updated_at": "2025-08-14T08:03:53.337100"
+      "updated_at": "2025-08-14T14:11:10.843879"
     }
   }
 }
