@@ -1,0 +1,12 @@
+{
+  "ranges": [
+    {"range": "1-5",  "description": "Folder & file setup",           "status": "complete",     "notes": "Structure, venv, env, init files done"},
+    {"range": "6-20", "description": "Core build sequence",           "status": "complete",     "notes": "Config, constants, logging, telemetry, chains, state, discovery, verifier, safety"},
+    {"range": "21-27","description": "Wallet & execution scaffold",   "status": "complete",     "notes": "Keyring, nonce/gas, scheduler, sweeper drafts, router w/ sweeps"},
+    {"range": "28-30","description": "Tests & backfill",              "status": "complete",     "notes": "Backfill script and tests; pytest green"},
+    {"range": "31-35","description": "Production readiness",          "status": "in_progress",  "notes": "Live-send toggle, value estimator, ABI-aware sims, token sweep config, resilience"},
+    {"range": "36-50","description": "Expansion & scaling",           "status": "not_started",  "notes": "Deployment polish, metrics, parallelism, prioritization, ops"}
+  ],
+  "weights": { "complete": 1.0, "in_progress": 0.5, "not_started": 0.0 },
+  "total_steps": 50
+}

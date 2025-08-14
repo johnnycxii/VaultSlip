@@ -1,0 +1,21 @@
+﻿# Secrets & local env
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Runtime & logs
+logs/
+backups/
+data/cache/
+data/review/
+data/runtime_guard.json
+data/queue.json
+data/*.csv
+data/*.json
+!data/README.md
+
+# keep empty dirs
+!.gitkeep

@@ -1,0 +1,297 @@
+{
+  "steps": {
+    "38": {
+      "name": "Deployment scheduling",
+      "status": "Complete",
+      "notes": [
+        "Cycle + rotate/backup active"
+      ],
+      "updated_at": "2025-08-13T20:35:08.750019"
+    },
+    "39": {
+      "name": "Multi-chain growth",
+      "status": "Complete",
+      "notes": [
+        "Discovery queued 13 (ETH 12, CELO 1)"
+      ],
+      "updated_at": "2025-08-13T20:35:08.750019"
+    },
+    "40": {
+      "name": "Executor parallelism",
+      "status": "Complete",
+      "notes": [
+        "Concurrent batch dry-run OK"
+      ],
+      "updated_at": "2025-08-13T20:35:08.750019"
+    },
+    "41": {
+      "name": "Advanced sims",
+      "status": "Complete",
+      "notes": [
+        "Param-inference via eth_call; router gating safe"
+      ],
+      "updated_at": "2025-08-13T20:35:08.750019"
+    },
+    "42": {
+      "name": "Prioritization",
+      "status": "Complete",
+      "notes": [
+        "Ranking in place; current rewards=0 for treasury"
+      ],
+      "updated_at": "2025-08-13T20:35:08.750019"
+    },
+    "43": {
+      "name": "Mempool hygiene",
+      "status": "Complete",
+      "notes": [
+        "Caps computed and bounded by env; replacement ladder verified",
+        "Retry limit present; private RPC optional"
+      ],
+      "updated_at": "2025-08-13T20:59:05.182635"
+    },
+    "44": {
+      "name": "Key hygiene",
+      "status": "Complete",
+      "notes": [
+        "Weekly rotation ping task registered",
+        "Rotation cadence + buffer checks in review file"
+      ],
+      "updated_at": "2025-08-13T21:11:09.963083"
+    },
+    "1": {
+      "name": "Folder & file setup",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282132"
+    },
+    "2": {
+      "name": "Folder & file setup",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "3": {
+      "name": "Folder & file setup",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "4": {
+      "name": "Folder & file setup",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "5": {
+      "name": "Folder & file setup",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "6": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "7": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "8": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "9": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "10": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "11": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "12": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "13": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "14": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "15": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "16": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "17": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "18": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "19": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "20": {
+      "name": "Core build sequence",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "21": {
+      "name": "Wallet & execution scaffold",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "22": {
+      "name": "Wallet & execution scaffold",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "23": {
+      "name": "Wallet & execution scaffold",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "24": {
+      "name": "Wallet & execution scaffold",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "25": {
+      "name": "Wallet & execution scaffold",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "26": {
+      "name": "Wallet & execution scaffold",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "27": {
+      "name": "Wallet & execution scaffold",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "28": {
+      "name": "Tests & backfill",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "29": {
+      "name": "Tests & backfill",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "30": {
+      "name": "Tests & backfill",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "31": {
+      "name": "Production readiness",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "32": {
+      "name": "Production readiness",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "33": {
+      "name": "Production readiness",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "34": {
+      "name": "Production readiness",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "35": {
+      "name": "Production readiness",
+      "status": "Complete",
+      "notes": [],
+      "updated_at": "2025-08-13T21:11:27.282909"
+    },
+    "36": {
+      "name": "Allow/Block policy",
+      "status": "Complete",
+      "notes": [
+        "Default deny-by-default; history thresholds tightened"
+      ],
+      "updated_at": "2025-08-13T21:18:06.314592"
+    },
+    "37": {
+      "name": "Metrics",
+      "status": "Complete",
+      "notes": [
+        "export_metrics.py added; charts/logs available"
+      ],
+      "updated_at": "2025-08-13T21:18:06.314592"
+    },
+    "45": {
+      "name": "Ops guardrails",
+      "status": "Complete",
+      "notes": [
+        "Kill-switch, cooldown after error bursts, daily gas budget",
+        "Implemented in scripts/cycle_dryrun.ps1; state at data/runtime_guard.json"
+      ],
+      "updated_at": "2025-08-14T08:03:53.337100"
+    }
+  }
+}
