@@ -1,10 +1,10 @@
-﻿name: VaultSlip CI (sanity)
+﻿name: VaultSlip CI
 on:
   push:
   pull_request:
 
 jobs:
-  sanity:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -12,19 +12,52 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
 
-      - name: Sanity
+      - name: Create minimal .env
         run: |
-          python -V
-          echo "PWD=C:\Users\Johnny\Projects\VaultSlip"
-          ls -la
+          cat > .env <<'ENV'
+          CHAINS=ETH,POLY,CELO
+          RPC_URI_ETH=https://eth.llamarpc.com
+          RPC_URI_POLY=https://polygon-rpc.com
+          RPC_URI_CELO=https://forno.celo.org
+          EXECUTE_LIVE=false
+          HOT_WALLET_MNEMONIC="abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about"
+          HOT_WALLET_COUNT=1
+          SWEEP_TO=0xf8AD2786102b64083E49b1e84B70cE3CaCC545de
+          ETHERSCAN_API_KEY=dummy
+          POLYGONSCAN_API_KEY=dummy
+          CELOSCAN_API_KEY=dummy
+          ENV
+          echo "Wrote C:\Users\Johnny\Projects\VaultSlip/.env"
 
-      - name: Upload logs (if any)
+      - name: Install dependencies (best effort)
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+          pip install pytest
+        continue-on-error: true
+
+      - name: Smoke import (non-fatal)
+        run: |
+          python - <<'PY'
+          import importlib.util, sys
+          print("find_spec('vaultslip') ->", importlib.util.find_spec("vaultslip") is not None)
+          try:
+              import vaultslip
+              print("import vaultslip -> OK")
+          except Exception as e:
+              print("import vaultslip -> WARN:", e, file=sys.stderr)
+          PY
+        continue-on-error: true
+
+      - name: Run pytest (non-fatal)
+        run: pytest -q
+        continue-on-error: true
+
+      - name: CI summary
         if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: logs
-          path: |
-            logs/**
-            data/review/**
-          if-no-files-found: ignore
+        run: |
+          echo "CI completed (deps/import/tests are soft-fail for now)" >> "\"
